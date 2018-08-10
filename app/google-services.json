@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "794917856070",
+    "firebase_url": "https://basicshit-v1-1526914776858.firebaseio.com",
+    "project_id": "basicshit-v1-1526914776858",
+    "storage_bucket": "basicshit-v1-1526914776858.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794917856070:android:c762a6d87b1d9e7d",
+        "android_client_info": {
+          "package_name": "com.development.lakshya.basicshit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794917856070-smg2vdfqoj3dsrbprsh6c8bkeu1t8tmm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.development.lakshya.basicshit",
+            "certificate_hash": "3c1dd6ae557f995922e2e917228ab5f8f5bb1082"
+          }
+        },
+        {
+          "client_id": "794917856070-bnljp5hmgq1omn4jrq2bhnkcnpqs5hoh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "794917856070-bnljp5hmgq1omn4jrq2bhnkcnpqs5hoh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAadkddtjAA7cwA0LiZAz1QnuQGUGwHt5o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794917856070-bnljp5hmgq1omn4jrq2bhnkcnpqs5hoh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

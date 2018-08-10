@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp">
+
+        <ImageButton
+            android:id="@+id/ib_addPhoto"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/add_a_photo_icon24dp" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:layout_below="@+id/ib_addPhoto"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            app:backgroundTint="#FE6600" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            app:backgroundTint = "#FE6600"
+            android:hint="Address"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:id="@+id/tv_overallRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall Rating"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_address"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_overall"
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/tv_overallRating" />
+
+        <TextView
+            android:id="@+id/tv_smellRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smell Rating"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ratingBar_overall"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_smell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/tv_smellRating" />
+
+        <TextView
+            android:id="@+id/tv_hygieneRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hygiene Rating"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ratingBar_smell"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar_hygiene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/tv_hygieneRating" />
+
+        <RelativeLayout
+            android:id="@+id/rl_userTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar_hygiene"
+            android:layout_centerHorizontal="true">
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_children"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                app:buttonTint="#FE6600"
+                android:text="Children"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_children"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                app:buttonTint="#FE6600"
+                android:text="Male"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_male"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                app:buttonTint="#FE6600"
+                android:text="Female"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/cb_disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cb_female"
+                android:layout_marginBottom="20dp"
+                app:buttonTint="#FE6600"
+                android:text="Disabled"/>
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/spinner_place"
+            android:prompt="@string/place_type_prompt"
+            android:entries="@array/place_type_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_userTypes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_place"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/cost_array"
+            android:layout_alignRight="@id/spinner_place"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_towel"
+            android:text="Towel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner_cost"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_soap"
+            android:text="Soap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_towel"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_jet"
+            android:text="Jet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_soap"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_mirror"
+            android:text="Mirror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_jet"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_dustbin"
+            android:text="Dustbin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_mirror"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_toiletpaper"
+            android:text="Toilet Paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_dustbin"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_water"
+            android:text="Water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_toiletpaper"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            android:layout_alignRight="@+id/switch_changingStations"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_changingStations"
+            android:text="Changing Stations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_water"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@id/spinner_place"
+            app:theme="@style/Color1SwitchStyle"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/bv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_changingStations"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:elevation="10dp"
+            android:text="Submit"
+            android:textColor="#FE6600"
+            android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
+

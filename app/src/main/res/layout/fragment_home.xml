@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentLocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
+
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/rateMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_nearbyToilets"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Toilets Near You"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:textColor="#fe6600"-->
+        <!--style="@style/TextStyle"-->
+        <!--android:textSize="30sp"-->
+        <!--app:layout_anchor="@+id/rateMapView"-->
+        <!--android:visibility="visible"-->
+        <!--app:layout_anchorGravity="top|center" />-->
+
+    <Button
+        android:id="@+id/bv_findToilets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/mark_a_point_button_shape"
+        android:text="Find Toilets"
+        android:layout_gravity="bottom|center_horizontal"
+        app:elevation="6dp"
+        android:textColor="#FE6600"
+        android:visibility="visible"
+        android:enabled="true"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutFragmentHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.tmall.ultraviewpager.UltraViewPager
+            android:id="@+id/ultra_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/fab_myLocation_home"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_myLocation_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            app:backgroundTint = "@android:color/white"
+            android:tint="#FE6600"
+            android:src="@drawable/floating_icon_location24dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBarHome"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+
+    <!--android:textSize="25sp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView24"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Toilets Near You"-->
+    <!--android:layout_marginTop="60dp"-->
+    <!--android:layout_gravity="center|top"-->
+    <!--android:textColor="#FE6600"-->
+    <!--android:background="#B3FFFFFF"-->
+
+    <!--android:textSize="25sp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView25"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Toilets Near You"-->
+    <!--android:layout_marginTop="100dp"-->
+    <!--android:layout_gravity="center|top"-->
+    <!--android:textColor="#FE6600"-->
+    <!--android:background="#A6FFFFFF"-->
+
+    <!--android:textSize="25sp"/>-->
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#FE6600</item>
+    </style>
+</resources>

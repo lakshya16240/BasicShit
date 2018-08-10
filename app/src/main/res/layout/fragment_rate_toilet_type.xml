@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FE6600"
+    app:cardCornerRadius="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/water_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/public_toilet_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/public_toilet"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public Toilet"
+                    android:textSize="18sp"
+                    app:elevation="15dp"
+                    android:elevation="14dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/water_card"
+                    android:background="@drawable/rounded_corner_rate_toilet"
+                    android:layout_gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/shopping_mall_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/shopping_mall_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/shopping_mall"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Shopping Mall"
+                    app:elevation="15dp"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/shopping_mall_card"
+                    android:background="@drawable/rounded_corner_rate_toilet" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cafe_bar_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/cafe_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginRight="49dp"
+                        android:layout_marginTop="54dp"
+                        android:layout_marginBottom="54dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cafe_bar"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cafe/Bar"
+                    android:textSize="18sp"
+                    app:elevation="15dp"
+                    android:layout_below="@+id/cafe_bar_card"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/rounded_corner_rate_toilet"
+                    android:layout_gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/petrol_pump_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/petrol_pump_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="49dp"
+                        android:layout_marginRight="49dp"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginBottom="44dp"
+                        android:src="@drawable/petrol_pump"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Petrol Pump"
+                    android:textSize="18sp"
+                    app:elevation="15dp"
+                    android:layout_below="@+id/petrol_pump_card"
+                    android:background="@drawable/rounded_corner_rate_toilet" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
