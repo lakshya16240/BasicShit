@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:794917856070:android:c762a6d87b1d9e7d",
         "android_client_info": {
-          "package_name": "com.development.lakshya.basicshit"
+          "package_name": "com.development.Lakshya.basicshit"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "794917856070-smg2vdfqoj3dsrbprsh6c8bkeu1t8tmm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.development.lakshya.basicshit",
+            "package_name": "com.development.Lakshya.basicshit",
             "certificate_hash": "3c1dd6ae557f995922e2e917228ab5f8f5bb1082"
           }
         },

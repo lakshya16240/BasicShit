@@ -2,30 +2,75 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#8c7269"
+    android:background="#FF8E6E"
     android:id="@+id/fragmentRating"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activities.RateActivity">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/back_button_white"/>
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_back_to_MapPopup"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:src="@drawable/back_button_white"/>-->
 
-    <FrameLayout
-        android:id="@+id/ratingCards"
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="6"-->
+        <!--android:layout_marginBottom="48dp">-->
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/ratingCards"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginRight="48dp"-->
+            <!--android:layout_marginLeft="48dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_navigate_backward_disabled"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/ic_navigate_backward_disabled"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_navigate_backward_enabled"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:visibility="gone"-->
+            <!--android:src="@drawable/ic_navigate_backward_enabled"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_navigate_forward_enabled"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/ic_navigate_forward_enabled" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_navigate_forward_disabled"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:visibility="gone"-->
+            <!--android:src="@drawable/ic_navigate_forward_disabled" />-->
+
+    <!--</RelativeLayout>-->
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:layout_marginRight="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginBottom="60dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src=""/>
+        android:text="Coming Soon!"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical"/>
+
+
 
 </LinearLayout>
